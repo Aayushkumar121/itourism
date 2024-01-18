@@ -1,0 +1,135 @@
+.loginContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(132, 221, 235);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.loginWrapper {
+    position: relative; 
+    border-radius: 20px;
+    width: 45vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginLeftSide {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.leftImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loginRightSide {
+    margin: 0;
+    flex: 1;
+    background-color: #a5e7f0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+.loginRightSide>h2 {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(193, 130, 13);
+    margin: 2.5rem 0;
+}
+
+.loginRightSide>.loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loginForm {
+    margin-top: 5rem;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    gap: 32px;
+}
+
+.loginForm>input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    height: 2rem;
+    width: 50%;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem;
+    transition: 150ms all ease-in-out;
+}
+
+.loginForm>input:focus {
+    padding-left: 0.75rem;
+}
+
+.loginForm>.submitBtn {
+    margin-top: 2.5rem;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1.5rem;
+    background-color: coral;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.loginForm>.submitBtn:hover {
+    border-color: orange;
+    color: orange;
+    background-color: #fff;
+}
+
+.loginForm>p {
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginForm>p>a {
+    text-decoration:underline;
+    font-size: 20px;
+    color: rgb(246, 84, 72);
+}
+.loginForm>p>a:hover {
+    border-color: orange;
+    color: orange;
+    background-color: #fff;
+}
+.errorMessage{
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(239, 56, 56);
+    color: #fff;
+    position: absolute;
+    top: -70px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
